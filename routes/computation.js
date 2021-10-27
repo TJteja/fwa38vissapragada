@@ -23,13 +23,6 @@ router.get('/',(req,res,next) =>{
     res.render('computation', {value : `exp applied to ${req.query[a]} is ${Math.exp(req.query[a])}`})
     }
 }
-
-    
-    
-    
-    
-    
-
 })
 
 
