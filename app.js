@@ -3,14 +3,12 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
+var mydataRouter = require('.routes/mydata')
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
-router.get('/', function(req, res, next) {
-  res.render('mydata', { title: 'Sai Tejaswee Vissapragada' });
-});
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
